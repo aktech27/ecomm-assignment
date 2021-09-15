@@ -31,7 +31,7 @@ const ProductCard = ({ product }) => {
           {product.available ? "In-Stock" : "Out-of-stock"}
         </span>
         <div className="img-container">
-          <img src={img} alt="Denim Jeans" />
+          <img src={img} alt="Product" />
         </div>
         <div className="product-details">
           <h1>{product.name}</h1>
