@@ -6,6 +6,7 @@ import Banana from "../assets/img/Banana.jpg";
 import Drumstick from "../assets/img/Drumstick.jpg";
 import Orange from "../assets/img/Orange.jpg";
 import Potato from "../assets/img/Potato.jpg";
+import Header from "../components/Header/Header";
 
 const Product = () => {
   const { id } = useParams();
@@ -40,6 +41,8 @@ const Product = () => {
 
   return (
     <div>
+      <Header heading="Product View" />
+
       <Dialog visibility={visibility} setVisibility={setVisibility} product={product} />
       <div className="product-ind">
         <img src={img} alt="Product" height="400" width="400" />
