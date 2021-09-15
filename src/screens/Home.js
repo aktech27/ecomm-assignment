@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import productList from "../assets/productList.json";
+import ProductCard from "../components/ProductCard/ProductCard";
 
 const Home = () => {
+  const [products, setProducts] = useState(productList);
+
   return (
-    <div>
-      <h1>This is home</h1>
-    </div>
+    <>
+      <div className="product-container">
+        {products.map((product) => (
+          <ProductCard product={product} />
+        ))}
+      </div>
+    </>
   );
 };
 
