@@ -41,7 +41,7 @@ const Product = () => {
   return (
     <div>
       <Dialog visibility={visibility} setVisibility={setVisibility} product={product} />
-      <div>
+      <div className="product-ind">
         <img src={img} alt="Product" height="400" width="400" />
         <h1>
           {product.name} - ₹. {product.price}
