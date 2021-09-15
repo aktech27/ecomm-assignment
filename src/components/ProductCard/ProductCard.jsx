@@ -27,7 +27,9 @@ const ProductCard = ({ product }) => {
   return (
     <Link to={"/product/" + product.id}>
       <div className="product-card">
-        <span>{product.available ? "In-Stock" : "Out-of-stock"}</span>
+        <span id="stock-status" className={"stock-" + product.available}>
+          {product.available ? "In-Stock" : "Out-of-stock"}
+        </span>
         <div className="img-container">
           <img src={img} alt="Denim Jeans" />
         </div>
@@ -35,7 +37,7 @@ const ProductCard = ({ product }) => {
           <h1>{product.name}</h1>
           <span className="price">₹. {product.price}</span>
         </div>
-        <p>{product.vendor}</p>
+        <p className="vendor">{product.vendor}</p>
       </div>
     </Link>
   );
