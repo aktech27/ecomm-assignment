@@ -1,0 +1,23 @@
+.filter {
+  margin: 10px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 98vw;
+  font-size: 20px;
+}
+.filter button {
+  margin: 0px 8px;
+  font-size: 18px;
+  background-color: rgb(59, 59, 240);
+  padding: 4px 8px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid blue;
+}
+
+.filter select {
+  margin: 0px 8px;
+  font-size: 16px;
+}
